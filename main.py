@@ -14,9 +14,14 @@ def divide(a: float, b: float) -> float:
         raise ValueError("Деление на ноль невозможно")
     return a / b
 
+def multiply(a: float, b: float) -> float:
+    return a * b
+
 if __name__ == "__main__":
     print("=== Командный калькулятор ===")
     print("5 + 3 =", add(5, 3))
     print("10 - 4 =", subtract(10, 4))
     print("20 / 4 =", divide(20, 4))
     print("\nОжидается добавление новых операций через Pull Request!")
+    print("5*4=", multiply(5, 4))
+
